@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portfolio</title>
+    <title>Claudia Mendez Web Dev</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Menú encabezado -->
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#">Claudia</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">Sobre mi</a></li>
+            <li><a href="#skills" onclick="seleccionar()">Skills</a></li>
+            <li>
+              <a href="#curriculum" onclick="seleccionar()">Curriculum</a>
+            </li>
+            <li><a href="#portfolio" onclick="seleccionar()">Portfolio</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+
+    <!-- Sección inicio -->
+    <section id="inicio" class="inicio">
+      <div class="contenido-banner">
+        <div class="contenedor-img">
+          <img src="img/hero-main.png" alt="" />
+        </div>
+        <h1>Claudia Méndez</h1>
+        <h2>Desarrolladora Web - FrontEnd UX/UI</h2>
+        <div class="redes">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Sobre mi -->
+    <section id="sobremi" class="sobremi">
+      <div class="contenido-seccion">
+        <h2>Sobre mi</h2>
+        <p>
+          <span>Hola, soy Claudia Méndez. </span>Soy desarrolladora web y
+          diseñadora UX/UI. Me gusta trabajar en proyectos innovadores que
+          impacten positivamente a las personas y empresas. Me enfoco en diseñar
+          interfaces de usuario amigables y eficientes, logrando que mis
+          clientes se sientan cómodos y confiables en sus decisiones.
+        </p>
+        <div class="fila">
+          <!-- Datos personales -->
+          <div class="col">
+            <h3>Datos Personales</h3>
+            <ul>
+              <!-- <li>
+                <strong>Cumpleaños</strong>
+                19-01
+              </li> -->
+              <li>
+                <strong>Teléfono</strong>
+                +57 3175775427
+              </li>
+              <li>
+                <strong>Email</strong>
+                claudiamendezt19@gmail.com
+              </li>
+              <!-- <li>
+                        <strong>Sitio web</strong>
+                        www.example.com
+                    </li> -->
+              <li>
+                <strong>Ubicación</strong>
+                Bogotá, Colombia
+              </li>
+              <li>
+                <strong>Cargo</strong>
+                Freelance
+              </li>
+            </ul>
+          </div>
+
+          <!-- Intereses -->
+          <div class="col">
+            <h3>Intereses</h3>
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-solid fa-headphones"></i>
+                <p>Música</p>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-plane"></i>
+                <p>Viajar</p>
+              </div>
+              <div class="interes">
+                <i class="fa-brands fa-android"></i>
+                <p>Android</p>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-book-open-reader"></i>
+                <p>Leer</p>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-language"></i>
+                <p>Idiomas</p>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-tv"></i>
+                <p>Series</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button>
+          Descargar CV <i class="fa-solid fa-download"></i>
+          <span class="overlay"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Sección Skills -->
+    <section id="skills" class="skills">
+      <div class="contenido-seccion">
+        <h2>Skills</h2>
+        <div class="fila">
+          <!-- Technical skills -->
+          <div class="col">
+            <h3>Technical Skills</h3>
+            <div class="skill">
+              <span>JavaScript</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>60%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>HTML & CSS</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>60%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>Make</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>60%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>Wordpress</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>50%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>Drupal</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>60%</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="habilidad">
+                    <h3>CSS</h3>
+                    <div class="barra">
+                        <div class="porcentaje" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="habilidad">
+                    <h3>JavaScript</h3>
+                    <div class="barra">
+                        <div class="porcentaje" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="habilidad">
+                    <h3>React</h3>
+                    <div class="barra">
+                        <div class="porcentaje" style="width: 75%;"></div>
+                    </div>
+                </div> -->
+          </div>
+          <!-- Professional skills -->
+          <div class="col">
+            <h3>Professional Skills</h3>
+            <div class="skill">
+              <span>Comunicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>95%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>Trabajo en Equipo</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>Creatividad</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>95%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>Dedicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <span>Asertividad</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>98%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
